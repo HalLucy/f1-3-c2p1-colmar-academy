@@ -1,0 +1,807 @@
+/* general styles */
+
+html{
+  font-family: 'Roboto Slab', serif;
+  background-image: url("images/polygon_background.gif");
+  background-size: cover;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+h1{
+  color: rgba( 47, 131, 231, 1);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+h2{
+  color: rgba( 47, 131, 231, 1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+h3{
+  color: rgba( 47, 131, 231, 1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+
+p {
+  font-size: 1em;
+  line-height: 200%;
+  color: rgba(80, 80, 80, 1);
+}
+
+a {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mainpanel {
+  width: 100%;
+  display: inline-flex;
+}
+
+.rightcolumn{
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-right: 16px;
+  margin-left: 8px;
+}
+
+.large_panel{
+  margin: 32px 24px;
+  width: 60%;
+  flex-shrink: 0;
+  z-index: 0;
+}
+
+.large_panel_picture{
+  padding: 8px;
+  margin-left: -8px;
+  margin-top: -8px;
+  width: 60%;
+  flex-shrink: 0;
+  z-index: 0;
+  background-color: rgba( 187, 214, 247,0.9);
+}
+
+.large_panel video{
+  width: 100%;
+}
+
+.small_panel {
+  width: 423px;
+  margin: 8px 0;
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba( 187, 214, 247,0.8);
+  background-size: cover;
+}
+
+.small_panel h3 {
+  margin: 8px 0;
+}
+
+.small_image {
+  padding: 8px;
+    width: 148px;
+}
+
+/* header */
+
+header{
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  height: 64px;
+  top: 0;
+  z-index: 15;
+}
+
+header nav{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+header div{
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+
+.links a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: rgba( 47, 131, 231, 1);
+  padding: 8px;
+  display: inline-flex;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.links a:hover {
+  color: white;
+  background-color: rgba( 47, 131, 231, 1);
+  background-size: cover;
+}
+
+#Logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+
+#Logo:hover {
+  background-color: rgba( 47, 131, 231, 1);
+  color: white;
+}
+
+#Logo span{
+  display: inherit;
+}
+
+#Logo .icon {
+  content: url("images/ic-logo-blue.svg");
+  width: 40px;
+}
+
+#Colmar {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: black;
+}
+
+#Academy {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  opacity: 0.35;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+#Spacer {
+  height: 64px;
+  width: 100%;
+}
+
+/* main panel 1 */
+
+#MainPanel_1 {
+  align-items: center;
+}
+
+#Banner {
+  margin: 24px 16px;
+  content: url("images/banner.jpg");
+}
+
+#LearnSomethingNew {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 12px 24px 12px 16px;
+  margin-right: 24px;
+}
+
+#LearnSomethingNew h1{
+  margin-bottom: 16px;
+}
+
+#LearnSomethingNew h3{
+  line-height: 150%;
+}
+
+#StartHere {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 8px;
+  background-color: rgba( 47, 131, 231, 1);
+  border-radius: 10px;
+}
+
+#StartHere h3 {
+  width: 100%;
+  color: white;
+}
+
+
+#StartHere:hover{
+  background-color: rgba(101,169,223,1);
+  transition: background-color 200ms ease-in-out;
+}
+
+
+/* main panel 2 */
+
+#MainPanel_2{
+ align-items: top;
+}
+
+#MainPanel_2 h2{
+  margin: 32px 0 24px 0;
+}
+
+.mainpanel .large_panel p {
+  font-size: 1.2em;
+}
+
+
+#Quote{
+  margin-bottom: 1em;
+}
+
+#InformationMain {
+  content: url("images/information-main.jpg");
+  width: 100%;
+  }
+
+#Orientation .small_image{
+  content: url("images/information-orientation.jpg");
+}
+
+#Campus .small_image{
+  content: url("images/information-campus.jpg");
+}
+
+#GuestLecture .small_image {
+  content: url("images/information-guest-lecture.jpg");
+}
+
+.rightcolumn a {
+  color: white;
+  background-color: rgba( 47, 131, 231, 1);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.rightcolumn a:hover {
+  background-color: rgba(101,169,223,1);
+  transition: background-color 100ms ease-in-out;
+}
+
+.rightcolumn p {
+  line-height: 150%;
+}
+
+/* Start learning */
+
+#StartLearning h2 {
+  margin-top: 30px;
+}
+
+#StartLearning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid rgba(101,169,223,1);
+  border-bottom: 2px solid rgba(101,169,223,1);
+}
+
+.courses {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.medium_panels_container {
+  display: inline-flex;
+}
+
+.medium_panels{
+  margin: 16px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 1296px;
+  flex-shrink: 1;
+}
+
+.medium_panel{
+  width: 400px;
+  height: auto;
+  margin: 16px;
+  position: relative;
+}
+
+.medium_panel p {
+  font-size: 1.2em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0);
+}
+
+.overlay:hover {
+  background-color: rgba(255,255,255,0.3);
+  transition: background-color 150ms ease-in-out;
+}
+
+.medium_panel.color1{
+  background-color: rgba( 187, 214, 247,0.8);
+}
+
+.medium_panel.color2{
+  background-color: rgba( 199, 224, 160,0.8);
+}
+
+.medium_panel.color3{
+  background-color: rgba( 214, 218, 208,0.8);
+}
+
+.medium_panel h3{
+  padding-bottom: 0.5em;
+}
+
+.medium_panel .panel_text {
+  padding: 16px 16px 24px 16px;
+}
+
+
+
+#Software {
+  content: url("images/course-software.jpg");
+  width: 100%;
+}
+
+#ComputerArt {
+  content: url("images/course-computer-art.jpg");
+  width: 100%;
+}
+
+#Design {
+  content: url("images/course-design.jpg");
+  width: 100%;
+}
+
+#Data {
+  content: url("images/course-data.jpg");
+  width: 100%;
+}
+
+#Business {
+  content: url("images/course-business.jpg");
+  width: 100%;
+}
+
+#Marketing {
+  content: url("images/course-marketing.jpg");
+  width: 100%;
+}
+
+
+/* Thesis Exhibit */
+
+#ThesisHeading {
+  margin-top: 30px;
+}
+
+#ThesisExhibits {
+  background-color: none;
+  background-size: cover;
+  align-items: center;
+}
+
+#ThesisExhibits .large_panel{
+  margin-right: 16px;
+
+}
+
+#ThesisExhibits .large_panel_picture{
+  width: 100%;
+}
+
+
+#ThesisExhibits h2{
+  text-align: center;
+  margin-top: 32px;
+}
+
+#ThesisExhibits h3{
+  margin: 24px 0;
+}
+
+#Fisma .small_image {
+  content: url("images/thesis-fisma.jpg");
+}
+
+#NowAndThen .small_image {
+  content: url("images/thesis-now-and-then.jpg");
+}
+
+/* social media */
+
+#SocialMedia {
+  width: 100%;
+}
+
+#SocialMedia h3 {
+  text-align: center;
+  margin: 24px 16px 16px 0;
+}
+
+#SocialMedia a{
+  color: rgba( 47, 131, 231, 1);
+  padding: 8px;
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+#SocialMedia a:hover{
+  color: white;
+  background-color: rgba( 47, 131, 231, 1);
+}
+
+/* footer */
+
+footer{
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 64px;
+}
+
+footer div{
+  display: inherit;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 8px;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+}
+
+
+/* resposnive design for smaller displays */
+
+@media only screen and (max-width: 1200px) and (min-width: 900px){
+
+  .small_panel {
+    width: 300px;
+  }
+
+  .small_panel span{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+  html{
+    background-image: url("images/polygon_background_mobile.gif");
+    background-size: cover;
+  }
+
+  #Mainpanel_1 {
+    flex-direction: column;
+  }
+
+  #MainPanel_1 .large_panel_picture {
+    display: none;
+  }
+
+  #SpacerMobile {
+    height: 180px;
+    width: 100%;
+  }
+
+  #LearnSomethingNew {
+    width: 60%;
+    margin: 0 0 0 16px;
+    padding: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  /* general styles */
+
+  html{
+    background-image: url("images/polygon_background_mobile.gif");
+    background-size: cover;
+  }
+
+  .mainpanel {
+    flex-direction: column;
+  }
+
+  .rightcolumn {
+    padding: 0 0 32px 0;
+    margin: 0;
+  }
+
+  .small_panel {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 3px 0;
+    padding-top: 0;
+  }
+
+  .small_panel h3 {
+    font-size: 2.3em;
+  }
+
+  .small_panel p {
+    display: block;
+    padding-left: 32px;
+    margin: 16px 0 24px 0;
+    font-size: 1.5em;
+    line-height: 100%;
+  }
+
+  .small_panel a {
+    font-size: 1em;
+  }
+
+  .small_panel h3 {
+    margin: 0 0 8px 32px;
+  }
+
+  .small_image {
+    width: calc(100% - 32px);
+    padding: 8px 16px 0 0;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .rightcolumn div{
+    padding-top: 8px;
+  }
+
+  .medium_panel h3 {
+    padding: 0 ;
+  }
+
+  /* header */
+
+  #Colmar {
+    display: none;
+  }
+
+  #Academy {
+    display: none;
+  }
+
+  .links .text{
+    color: white;
+  }
+
+  #OnCampus .icon{
+    content: url("images/ic-on-campus-blue.svg");
+    width: 40px;
+  }
+
+  #Online .icon{
+    content: url("images/ic-online-blue.svg");
+    width: 40px;
+  }
+
+  #ForCompanies {
+    display: none;
+  }
+
+  #SignIn .icon{
+    content: url("images/ic-login-blue.svg");
+    width: 40px;
+  }
+
+  /* mainpanel 1 */
+
+  #MainPanel_1 {
+    align-items: flex-start;
+  }
+
+  #MainPanel_1 .large_panel {
+    display: none;
+  }
+
+  /* mainpanel 2 */
+
+  #MainPanel_2 .large_panel {
+    display: none;
+  }
+
+  #Banner {
+    display: none;
+  }
+
+  #LearnSomethingNew {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  #LearnSomethingNew h1{
+    width: calc(100% - 32px);
+    margin-left: 16px;
+  }
+
+  #LearnSomethingNew h3{
+    margin: 0 0 0 16px;
+  }
+
+  #StartHere {
+    text-align: center;
+    width: calc(100% - 32px);
+    margin: 24px 16px 32px 16px;
+    padding: 8px 0;
+  }
+
+  #StartHere h3{
+    padding: 8px;
+    margin-bottom: 0;
+  }
+
+  #Orientation .small_image {
+    content: url("images/information-orientation-mobile.jpg");
+  }
+
+  #Campus .small_image {
+    content: url("images/information-campus-mobile.jpg");
+  }
+
+  #GuestLecture .small_image {
+    content: url("images/information-guest-lecture-mobile.jpg");
+  }
+
+  /* start learning */
+
+  .medium_panels_container {
+    width: 100%;
+  }
+
+  .medium_panels{
+    margin-bottom: 24px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .medium_panel {
+    margin: 0 16px 8px 16px;
+    width: 100%;
+  }
+
+  .medium_panel p{
+    display: none;
+  }
+
+  .medium_panel .panel_text{
+    width: auto;
+    padding: 16px 16px;
+  }
+
+  .medium_panel .picture {
+    display: none;
+  }
+
+  .medium_panel h3{
+    font-size: 1.7rem;
+    margin: 0;
+  }
+
+
+  #StartLearning h2{
+    margin: 32px 16px 8px 16px;
+  }
+
+
+  #StartLearning {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: auto;
+  }
+
+  /* thesis exhibits */
+
+  #ThesisHeading {
+    margin-bottom: 24px;
+  }
+
+
+  #ThesisExhibits {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #ThesisExhibits .large_panel{
+    padding: 0 0 24px 0;
+    margin: 0 0 0 8px;
+    width: 100%;
+  }
+
+  #ThesisExhibits .large_panel_picture{
+    width: calc(100% - 16px);
+  }
+
+  #ThesisExhibits .rightcolumn {
+    display: none;
+  }
+
+  #ThesisExhibits h3{
+    display: none;
+  }
+
+  #ThesisExhibits p {
+    display: none;
+  }
+
+/* footer */
+
+  footer .links{
+    display: none;
+  }
+}
+
+/* "coming soon" page */
+
+#ComingSoon {
+  margin-bottom: 40px;
+  background-color: rgba(255,255,255,0.6);
+  background-size: cover;
+}
+
+#HomeButton {
+  width: 30%;
+  opacity: 0.8;
+  content: url("images/home.svg")
+}
+
+#HomeButton:hover{
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+
+#Spacer1{
+  height: 180px;
+}
+
+#Spacer2{
+  height: 24px;
+}
+
+#Spacer3{
+  height: 60px;
+}
